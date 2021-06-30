@@ -77,7 +77,7 @@ https://drive.google.com/file/d/1llRpS8RPhW7M67uTGdqvLMJ61S68Kc3G/view?usp=shari
     user@user:~$ ./terraform apply -auto-approve
     ```
     
-    N.B: In caso di errore di connessione ssh eseguire ./terraform destroy e cancellare il security group recentemente creato su AWS. Rieseguire quindi il comando di "./terraform apply"
+    N.B.: In caso di errore di connessione ssh eseguire ./terraform destroy e cancellare il security group recentemente creato su AWS. Rieseguire quindi il comando di "./terraform apply"
 
 - Attendere che Terraform completi la creazione dell'infrastruttura. I tempi di attesa si attestano attorno ai 40 minuti data la presenza di file di dimensioni superiori al gigabyte da trasferire
 - Connettersi ad ogni macchina, sia master che slave:
@@ -118,4 +118,10 @@ Attendere anche una decina di secondi, se i comandi sono stati eseguiti corretta
 ```console
 ./spark/bin/spark-submit --master spark://PUBLICDNS:7077 create_lexicons_sprk.py
 ```
-Se i comandi sono stati impartiti correttamente, il programma comincerà a mostrare i suoi output
+Se i comandi sono stati impartiti correttamente, il programma comincerà a mostrare i suoi output.
+
+N.B.: Se si vuole ripetere l'esecuzione del programma senza modificarne i parametri, eliminare la cartella creata all'interno di "sprk_lexicons/3 classes", il cui formato dovrebbe essere simile a:
+
+```console
+Financial_only_abs_delta_lookback_28_ngrams_(1, 1)_stemming_True_remove_stopwords_True_max_df_0.9_min_df_10
+```
