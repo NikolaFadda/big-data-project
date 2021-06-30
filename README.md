@@ -83,7 +83,7 @@ https://drive.google.com/file/d/1llRpS8RPhW7M67uTGdqvLMJ61S68Kc3G/view?usp=shari
 - Connettersi ad ogni macchina, sia master che slave:
     - Accedere su AWS a "EC2"
     - Cliccare su "Istanze", dovrebbero essere presenti 7 macchine in stato "running" con nome "namenode" e "slave1", ... ,"slave6"
-    - Per ogni macchina, aprire un termine alla posizione in cui è salvata la chiave PEM
+    - Per ogni macchina, aprire un terminale alla posizione in cui è salvata la chiave PEM
     - Su AWS, clic destro sul nome della macchina e selezionare "Connect" e poi il menù a tendina "SSH client". Copiare la stringa sotto "Example"
     - Incollare la stringa su terminale ed eseguire (quando richiesto, digitare "yes")
     - Verificare (nel master) che siano presenti le cartelle "hadoop" e "spark", e 3 file con estensione ".py"
