@@ -6,7 +6,7 @@ GUIDA ALL'INSTALLAZIONE
  - Eseguire la pull del progetto
  - Scaricare il database con gli articoli al seguente link nella cartella del progetto: 
  ```console 
- https://drive.google.com/file/d/148fJCujxEKYetl8twrV31VZgcGbhKLqj/view?usp=sharing 
+ voidlinke
  ```
  - Scaricare il pacchetto Terraform al seguente link nella cartella del progetto, ed estrarlo: 
 ```console 
